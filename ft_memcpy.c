@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iel-alam <iel-alam@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 20:54:07 by iel-alam          #+#    #+#             */
-/*   Updated: 2024/11/05 23:15:00 by iel-alam         ###   ########.fr       */
+/*   Created: 2024/11/05 23:45:24 by iel-alam          #+#    #+#             */
+/*   Updated: 2024/11/07 19:36:45 by iel-alam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t			i;
-	unsigned char	*x;
-	unsigned char	cc;
+	unsigned char		*ptr_dest;
+	const unsigned char	*ptr_src;
 
-	cc = (unsigned char)c;
-	x = (unsigned char *)b;
-	i = 0;
-	while (i < len)
-	{
-		x[i] = cc;
-		i++;
-	}
-	return (b);
+	if (!dst && !src)
+		return (NULL);
+	if (!n)
+		return (dst);
+	ptr_dest = (unsigned char *)dst;
+	ptr_src = (unsigned char *)src;
+	while (n--)
+		*ptr_dest++ = *ptr_src++;
+	return (dst);
 }
