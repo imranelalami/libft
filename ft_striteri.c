@@ -6,9 +6,11 @@
 /*   By: iel-alam <iel-alam@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 19:44:21 by iel-alam          #+#    #+#             */
-/*   Updated: 2024/11/10 20:02:46 by iel-alam         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:06:42 by iel-alam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

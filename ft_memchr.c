@@ -6,7 +6,7 @@
 /*   By: iel-alam <iel-alam@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 09:49:03 by iel-alam          #+#    #+#             */
-/*   Updated: 2024/11/10 14:38:19 by iel-alam         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:08:00 by iel-alam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		{
 			return ((void *)ps);
 		}
-		ps++:
-		}
-			return (NULL);
+		ps++;
 	}
+	return (NULL);
+}
